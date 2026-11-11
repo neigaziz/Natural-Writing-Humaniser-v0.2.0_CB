@@ -1,0 +1,21 @@
+# Needs Analysis
+
+- Intended users:
+- Stakeholders:
+- Recurring task:
+- Desired outcome:
+- Target platform/runtime:
+- Available inputs:
+- Required outputs:
+- Tools/APIs/MCP/RAG/files:
+- Dependencies:
+- Required permissions:
+- Autonomy level:
+- Approval gates:
+- Security/privacy requirements:
+- Volume/latency/cost:
+- Known failure modes:
+- Success criteria:
+- Assumptions:
+- Open questions:
+- Out of scope:

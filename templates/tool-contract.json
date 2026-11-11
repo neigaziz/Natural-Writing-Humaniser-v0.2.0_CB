@@ -1,0 +1,12 @@
+{
+  "name": "operation_name",
+  "purpose": "One narrow operation",
+  "inputSchema": {"type": "object", "additionalProperties": false, "properties": {}},
+  "outputSchema": {"type": "object", "additionalProperties": false, "properties": {}},
+  "permissions": ["read-only-resource"],
+  "timeoutMs": 10000,
+  "maxAttempts": 1,
+  "idempotent": true,
+  "failureModes": ["authorization", "timeout", "malformed-response"],
+  "approvalRequired": false
+}

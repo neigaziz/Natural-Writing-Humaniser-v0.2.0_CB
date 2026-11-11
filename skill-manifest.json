@@ -1,0 +1,27 @@
+{
+  "name": "natural-writing-humaniser",
+  "version": "1.0.0",
+  "description": "Evidence-based natural writing and academic editing assistant; not an AI detector or detector-evasion tool.",
+  "platforms": [
+    "gpt-5.6-sol",
+    "claude-agent-skills"
+  ],
+  "autonomyLevel": 3,
+  "entrypoint": "SKILL.md",
+  "workflows": [
+    "workflows/capability-discovery.md",
+    "workflows/skill-design.md",
+    "workflows/skill-build.md",
+    "workflows/skill-audit.md",
+    "workflows/skill-refactor.md",
+    "workflows/integration-design.md",
+    "workflows/security-review.md",
+    "workflows/evaluation-design.md",
+    "workflows/release-and-installation.md"
+  ],
+  "requiredPermissions": [
+    "read-approved-workspace",
+    "write-approved-workspace",
+    "sandbox-code-execution"
+  ]
+}

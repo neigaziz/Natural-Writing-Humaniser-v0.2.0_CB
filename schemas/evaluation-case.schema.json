@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/agent-skills-specialist/schemas/evaluation-case.schema.json",
+  "title": "Evaluation Case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "category", "input", "expectedBehavior", "forbiddenBehavior", "severity", "evaluationMethod"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^TEST-[0-9]{3,}$"},
+    "category": {"type": "string", "minLength": 1},
+    "input": {},
+    "expectedBehavior": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "forbiddenBehavior": {"type": "array", "items": {"type": "string"}},
+    "severity": {"enum": ["low", "medium", "high", "critical"]},
+    "evaluationMethod": {"enum": ["deterministic", "model-rubric", "human-review", "runtime-integration"]}
+  }
+}

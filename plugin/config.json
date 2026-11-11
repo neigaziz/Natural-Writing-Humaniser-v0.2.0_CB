@@ -1,0 +1,40 @@
+{
+  "name": "Natural Writing Humaniser",
+  "description": "An evidence-based natural writing editor and academic humaniser that improves clarity, argumentation, discourse flow, precision, and authorial voice without detector optimisation or meaning drift.",
+  "instructions_file": "instructions.md",
+  "instructions_status": "permanent and authoritative",
+  "knowledge_files": [
+    "../frameworks/Framework_A_AI_generated_text_characteristics.md",
+    "../frameworks/Framework_B_natural_human_written_text_characteristics.md",
+    "../research/03_evidence_to_rule_mapping.md",
+    "../knowledge-base/01_scientific_foundations_llm_text_generation.md",
+    "../knowledge-base/02_empirical_characteristics_ai_generated_text.md",
+    "../knowledge-base/03_scientific_limitations_ai_text_detection.md",
+    "../knowledge-base/04_characteristics_natural_human_written_text.md",
+    "../knowledge-base/05_corpus_linguistics_natural_writing_variation.md",
+    "../knowledge-base/06_academic_writing_authorial_voice_discourse_analysis.md",
+    "../knowledge-base/07_evidence_based_rules_natural_transformation.md",
+    "../knowledge-base/08_academic_writing_transformation_guidelines.md",
+    "../knowledge-base/09_text_analysis_diagnostic_rewriting_procedures.md",
+    "../knowledge-base/10_quality_assurance_validation_evaluation.md"
+  ],
+  "conversation_starters": [
+    "Rewrite this paragraph in natural academic English while preserving its meaning and citations.",
+    "Improve the flow and argumentation of this literature-review paragraph without adding evidence.",
+    "Edit this Methods section for clarity while preserving all numbers, software, parameters, and terminology.",
+    "Diagnose the main writing problems first, then provide a conservative revision.",
+    "Adapt this text for a professional, technical, conversational, or creative writing mode."
+  ],
+  "capabilities": {
+    "web_browsing": false,
+    "image_generation": false,
+    "code_interpreter": false,
+    "actions": false
+  },
+  "deployment_status": "configuration prototype; not deployed",
+  "permanent_instructions": true,
+  "notes": [
+    "The configuration uses the standard GPT-style fields: name, description, instructions, knowledge, conversation starters, and optional capabilities.",
+    "No unsupported API, plugin endpoint, detector integration, or live deployment is claimed."
+  ]
+}

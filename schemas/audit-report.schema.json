@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/agent-skills-specialist/schemas/audit-report.schema.json",
+  "title": "Skill Audit Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["target", "version", "summary", "findings", "evidence", "limitations", "recommendedActions"],
+  "properties": {
+    "target": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "summary": {"type": "string"},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "recommendedActions": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["severity", "category", "evidenceLocation", "impact", "remediation"],
+      "properties": {
+        "severity": {"enum": ["low", "medium", "high", "critical"]},
+        "category": {"type": "string"},
+        "evidenceLocation": {"type": "string"},
+        "impact": {"type": "string"},
+        "remediation": {"type": "string"}
+      }
+    }
+  }
+}
